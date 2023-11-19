@@ -1,0 +1,13 @@
+{
+  "vimMode": false,
+  "propertiesInDocument": "visible",
+  "attachmentFolderPath": "attachments",
+  "alwaysUpdateLinks": true,
+  "promptDelete": false,
+  "livePreview": false,
+  "useTab": false,
+  "tabSize": 3,
+  "strictLineBreaks": true,
+  "readableLineLength": true,
+  "showLineNumber": true
+}

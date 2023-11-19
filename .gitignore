@@ -1,0 +1,10 @@
+!.gitkeep
+.trash
+.obsidian/plugins/obsidian-advanced-slides/
+.obsidian/plugins/obsidian-map-view/
+
+data.json
+
+.obsidian/workspace.json
+
+.obsidian/hotkeys.json
