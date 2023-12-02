@@ -18,7 +18,7 @@ Keep it together: 8 => [stability:: -3]
 ## Notes
 Things happened 
 Keep it together: 12 => [stability:: -1]
-- [ ] [serious_wound:: broken ribs]
+- [x] [serious_wound:: broken ribs]
 ## XP
 
 - have we learned something about the truth: [xp :: 1]
@@ -26,3 +26,4 @@ Keep it together: 12 => [stability:: -1]
 - have we challenged ourselves: [xp :: 1]
 - Dramatic Hook: [xp:: 1]
 - Dramatic Hook: [xp:: 1]
+- puppeteer fellow pc executed plan [xp:: 1]

@@ -9,5 +9,7 @@
   "tabSize": 3,
   "strictLineBreaks": true,
   "readableLineLength": true,
-  "showLineNumber": true
+  "showLineNumber": true,
+  "newFileLocation": "folder",
+  "newFileFolderPath": "inbox"
 }

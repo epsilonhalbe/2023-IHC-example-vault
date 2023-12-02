@@ -7,7 +7,7 @@ tags:
   - Kult
   - PCs
   - TTRPGs
-game: 
+game: "[[KULT - Pocahontas]]"
 game_system: "[[Kult divinity lost (system)]]"
 name: 
 pronouns: []
@@ -35,14 +35,15 @@ violence:
 let charsheet = dv.current().file
 let log = dv.page(dv.parse(charsheet.frontmatter.game).path)
 let advancements = charsheet.tasks.where(t => t.checked && t.advancement)
-let woundPenalty = log.file.tasks.where(t => !t.checked && t.serious_wound).length ? 1 : 0 + log.file.tasks.where(t => !t.checked && t.critical_wound).length ? 1 : 0 
-let stabilityChange = dv.page(dv.parse(charsheet.frontmatter.game).path).stability.reduce((a,b) => a + b, 0)
+let woundPenalty = log.file.tasks.where(t => !t.checked && t.serious_wound).length ? 1 : 0
+                 + log.file.tasks.where(t => !t.checked && t.critical_wound).length ? 1 : 0 
+let stabilityChanges = dv.array(dv.page(dv.parse(charsheet.frontmatter.game).path).stability).values.filter(x => x !== undefined).reduce((a,b) => a + b, 0)
 let xp = (charsheet.frontmatter.xp ?? 0 /* if there was some starting xp */) + (log.xp ?? []).reduce((a,b) => a+b, 0)
 let stability = (() => {
   let moderate = {disadvantage: -1}
   let serious = {disadvantage: -2, willpower: -1}
   let critical = {disadvantage: -3, willpower: -2, soul: 1}
-  switch(charsheet.frontmatter.stability + stabilityChange) {
+  switch(charsheet.frontmatter.stability ) {
      case 10: return {status: "composed"}
      case 9: return {status: "uneasy", ...moderate}
      case 8: return {status: "unfocused", ...moderate}

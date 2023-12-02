@@ -5,12 +5,8 @@ tags:
 title: The Cards
 ---
 # Curious Characters (NPCs)
-## Chloe Kurshner
-[profession:: Move star]
-[age:: 19]
-## Bartholomew Crane III
-[profession:: Stage actor]
-[age:: 28]
+[[Chloe Kurshner]]
+[[Bartholomew Crane III]]
 ## Nigel Hedenhammer
 [profession:: Parapsychologist]
 [age:: 33]

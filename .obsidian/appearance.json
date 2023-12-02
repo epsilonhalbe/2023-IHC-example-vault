@@ -1,5 +1,8 @@
 {
   "accentColor": "#16b0bb",
   "theme": "moonstone",
-  "cssTheme": ""
+  "cssTheme": "",
+  "enabledCssSnippets": [
+    "custom"
+  ]
 }
