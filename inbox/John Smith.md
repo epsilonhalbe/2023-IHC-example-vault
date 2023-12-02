@@ -1,13 +1,6 @@
-<%*
-let title = tp.file.title;
-if (title.startsWith('Untitled')) {
-   title = await tp.system.prompt('Title:');
-   await tp.file.rename(`${title}`);
-}
--%>
 ---
-title: <%* tR += `${title}` %>
-date: <% tp.date.now('YYYY-MM-DD') %>
+title: John Smith
+date: 2023-12-02
 template: "[[kult.aware.pc]]"
 template_version: 1
 tags:
